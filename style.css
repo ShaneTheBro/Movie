@@ -1,0 +1,155 @@
+:root{
+	--color-primary:#e05418;
+
+	--default-font-size:2rem;
+	--default-font-family: 'Acme', sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+	background-color: var(--color-white);
+	background-color: #DFE3E3;
+}
+
+*,*::after,*::before{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+.main {
+	background-image: linear-gradient(
+		to bottom right,
+		rgba(224, 84, 24, .5),
+		rgba(104, 115, 216, .7)),
+	url(img/background.jpg);
+	position: relative;
+	height: 110vh;
+	background-size:cover;
+	background-position: top;
+	font-family: var(--default-font-family)
+}
+
+.top {
+	padding-right: 10rem;
+	height: 25vh;
+}
+
+.logo img{
+	position: absolute;
+	left: 5rem;
+	top: 5rem;
+	width: 20rem;
+	height: auto;
+}
+
+
+.headers h1{
+	width: 100%;
+	height: 70%;
+	position: relative;
+	transform: translate(-50%,-50%);
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 1rem;
+	text-align: center;	
+	transition: 1s ease;
+}
+/* .header:hover{
+	transform: scale(2,2);
+	transition: .2s ease;
+	border-spacing: 10rem;
+	z-index: 4;
+} */
+
+.header {
+	top: 20%;
+	left: 50%;
+	font-size: 8rem;
+}
+
+.header-sub {
+	top: 50%;
+	left: 50%;
+	font-size: 5rem;
+
+}
+.user-input {
+	margin-top: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 30rem;
+	
+  }
+  
+  #person-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+  }
+  
+  .text-box {
+	height: 5rem;
+	width: 50rem;
+  }
+  .selection-label{
+	  color: white;
+  }
+  .person-form-input {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+	height: 30rem;
+	font-size: 5rem;
+  }
+
+  .nes-btn{
+	  color: white;
+	  background-color: rgba(104, 115, 216, 1)
+  }
+  .nes-btn, .nes-btn:link, .nes-btn:visited {
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1.5rem 4.0rem;
+	display: inline-block;
+	margin: 1rem;
+	font-size: 2rem;
+	border-radius: 10rem;
+	transition: all .2s;
+	position: relative;
+	animation: moveInBottom .5s ease-out .75s;
+	animation-fill-mode: backwards;
+}
+.nes-btn:hover{
+	transform: translateY(-.3rem);
+	box-shadow: 0 1.0rem 2rem rgba(0,0,0.2);
+
+}
+.nes-btn:active{
+	transform: translateY(-1px);
+	box-shadow: 0 .5rem 1rem rgba(0,0,0.2);
+}
+
+.gender-selection{
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1.5rem 4.0rem;
+	display: inline-block;
+	margin: 1rem;
+	font-size: 2rem;
+	border-radius: 10rem;
+	transition: all .2s;
+	position: relative;
+	animation: moveInBottom .5s ease-out .75s;
+	animation-fill-mode: backwards;
+}
+
+.selection:hover{
+	transform: translateY(-.3rem);
+	box-shadow: 0 1.0rem 2rem rgba(0,0,0.2);
+}
